@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dc_annotation_options>
+ <options cell="LNA_TLINE_ACTUAL2" library="Workspace2_lib" ToggleVoltage="true" view="schematic" ToggleCurrent="true"/>
+</dc_annotation_options>

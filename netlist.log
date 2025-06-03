@@ -1,0 +1,181 @@
+; Top Design: "Workspace2_lib:LNA_TLINE_ACTUAL2:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="Workspace2_lib:LNA_TLINE_ACTUAL2:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+MSTEP:Step30  N__34 N__52 Subst="MSub1" W1=50 mil W2=0.99 mm 
+#uselib "MDLXNLT1" , "BJT_INF_BFP420_MDLXNLT1"
+"BJT_INF_BFP420_MDLXNLT1":INF_BFP420_1  N__51 N__46 N__30 N__17 H=31 mil Er=4.3 T=1.7 mil TanD=0.022 Temp=18 
+#uselib "MDLXCLRKOA1" , "RES_KOA_0805_001_MDLXCLRKOA1"
+"RES_KOA_0805_001_MDLXCLRKOA1":KOA_RK73B2A_R2  N__66 N__64 R=223.384 Ohm notune{ 1 Ohm to 2000 Ohm by 44.057 Ohm } opt{ 1 Ohm to 2500 Ohm } Subst="MSub1" Sim_mode=0 Pad_mode=0 Tolerance=1.0 FreqPt=100 MHz Temperature=25 Pad_Width=1.27 mm Pad_Length=1.02 mm Pad_Gap=0.76 mm Orient=0 Body_Length=2.0mm Body_Width=1.25mm Body_Height=0.5mm R_Discrete=-1 Solder_Mask=0 MaskAperture=75 um Solder_Paste=0 PasteAperture=-75 um PadAngle1=0 PadInModel1=100 PadAngle2=0 PadInModel2=100 ESR_Tolerance=1.0 
+#uselib "MDLXCLRKOA1" , "RES_KOA_0805_001_MDLXCLRKOA1"
+"RES_KOA_0805_001_MDLXCLRKOA1":KOA_RK73B2A_R3  N__41 N__38 R=519.44 Ohm notune{ 1 Ohm to 1014.015 Ohm by 67.601 Ohm } opt{ 1 Ohm to 2500 Ohm } Subst="MSub1" Sim_mode=0 Pad_mode=0 Tolerance=1.0 FreqPt=100 MHz Temperature=18 Pad_Width=1.27 mm Pad_Length=1.02 mm Pad_Gap=0.76 mm Orient=0 Body_Length=2.0mm Body_Width=1.25mm Body_Height=0.5mm R_Discrete=-1 Solder_Mask=0 MaskAperture=75 um Solder_Paste=0 PasteAperture=-75 um PadAngle1=0 PadInModel1=100 PadAngle2=0 PadInModel2=100 ESR_Tolerance=1.0 
+#uselib "MDLXCLRKOA1" , "RES_KOA_0805_001_MDLXCLRKOA1"
+"RES_KOA_0805_001_MDLXCLRKOA1":KOA_RK73B2A_R4  N__39 N__47 R=2.81721 Ohm notune{ 1 Ohm to 100 Ohm by 0.62 Ohm } opt{ 1 Ohm to 500 Ohm } Subst="MSub1" Sim_mode=0 Pad_mode=0 Tolerance=1.0 FreqPt=100 MHz Temperature=18 Pad_Width=1.27 mm Pad_Length=1.02 mm Pad_Gap=0.76 mm Orient=0 Body_Length=2.0mm Body_Width=1.25mm Body_Height=0.5mm R_Discrete=-1 Solder_Mask=0 MaskAperture=75 um Solder_Paste=0 PasteAperture=-75 um PadAngle1=0 PadInModel1=100 PadAngle2=0 PadInModel2=100 ESR_Tolerance=1.0 
+#uselib "MDLXCLRKOA1" , "RES_KOA_0805_001_MDLXCLRKOA1"
+"RES_KOA_0805_001_MDLXCLRKOA1":KOA_RK73B2A_R5  N__36 N__88 R=92.8504 Ohm notune{ 40 Ohm to 85 Ohm by 0.01 Ohm } opt{ 90 Ohm to 110 Ohm } Subst="MSub1" Sim_mode=0 Pad_mode=0 Tolerance=1.0 FreqPt=100 MHz Temperature=18 Pad_Width=1.27 mm Pad_Length=1.02 mm Pad_Gap=0.76 mm Orient=0 Body_Length=2.0mm Body_Width=1.25mm Body_Height=0.5mm R_Discrete=-1 Solder_Mask=0 MaskAperture=75 um Solder_Paste=0 PasteAperture=-75 um PadAngle1=0 PadInModel1=100 PadAngle2=0 PadInModel2=100 ESR_Tolerance=1.0 
+V_Source:SRC1  N__40 0 Type="V_DC" Vdc=3 SaveCurrent=1 
+aele Mu1=mu(S);
+model MSub1 MSUB H=31 mil Er=4.3 Mur=1 Cond=1.0E+50 Hu=3.93701e+34 mil T=1.7 mil TanD=0.022 Rough=0 mil DielectricLossModel=1 FreqForEpsrTanD=1.0 GHz LowFreqForTanD=1.0 kHz HighFreqForTanD=1.0 THz RoughnessModel=2 
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=yes GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=yes SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 SPSS_WSP=yes \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=0.01 GHz Stop=10.0 GHz Lin=401 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+#uselib "MDLXCLRCLC1" , "IND_CLC_0402_201_MDLXCLRCLC1"
+"IND_CLC_0402_201_MDLXCLRCLC1":CLC_0402CS3  N__58 N__33 L=1.08951 nH notune{ 1 nH to 120 nH by 0.375 nH } opt{ 1 nH to 120 nH } Subst="MSub1" Sim_mode=0 Pad_mode=0 Tolerance=1.0 FreqPt=100 MHz Temperature=18 Pad_Width=0.5 mm Pad_Length=0.45 mm Pad_Gap=0.29 mm Orient=0 Body_Length=1.19 mm Body_Width=0.64 mm Body_Height=0.66 mm L_Discrete=-1 Solder_Mask=0 MaskAperture=75 um Solder_Paste=0 PasteAperture=-75 um PadAngle1=0 PadInModel1=100 PadAngle2=0 PadInModel2=100 ESR_Tolerance=1.0 
+#uselib "MDLXCLRCLC1" , "IND_CLC_0402_201_MDLXCLRCLC1"
+"IND_CLC_0402_201_MDLXCLRCLC1":CLC_0402CS1  N__2 N__50 L=113.804 nH notune{ 1 nH to 120 nH by 0.5 nH } opt{ 1 nH to 120 nH } Subst="MSub1" Sim_mode=0 Pad_mode=0 Tolerance=1.0 FreqPt=100 MHz Temperature=18 Pad_Width=0.5 mm Pad_Length=0.45 mm Pad_Gap=0.29 mm Orient=0 Body_Length=1.19 mm Body_Width=0.64 mm Body_Height=0.66 mm L_Discrete=-1 Solder_Mask=0 MaskAperture=75 um Solder_Paste=0 PasteAperture=-75 um PadAngle1=0 PadInModel1=100 PadAngle2=0 PadInModel2=100 ESR_Tolerance=1.0 
+#uselib "MDLXCLRCLC3" , "IND_CLC_0603_005"
+"IND_CLC_0603_005":CLC_0603HL_L2  N__20 N__16 L=3000 nH Subst="MSub1" Sim_mode=0 Pad_mode=0 Tolerance=1.0 FreqPt=100 MHz Temperature=25 Pad_Width=1.016 mm Pad_Length=0.635 mm Pad_Gap=0.635 mm Orient=0 Body_Length=1.8 mm Body_Width=1.19 mm Body_Height=0.94 mm L_Discrete=-1 Solder_Mask=0 MaskAperture=75 um Solder_Paste=0 PasteAperture=-75 um PadAngle1=0 PadInModel1=100 PadAngle2=0 PadInModel2=100 ESR_Tolerance=1.0 
+#uselib "MDLXCLRCLC3" , "IND_CLC_0603_005"
+"IND_CLC_0603_005":CLC_0603HL_L1  N__79 N__32 L=3000 nH Subst="MSub1" Sim_mode=0 Pad_mode=0 Tolerance=1.0 FreqPt=100 MHz Temperature=18 Pad_Width=1.016 mm Pad_Length=0.635 mm Pad_Gap=0.635 mm Orient=0 Body_Length=1.8 mm Body_Width=1.19 mm Body_Height=0.94 mm L_Discrete=-1 Solder_Mask=0 MaskAperture=75 um Solder_Paste=0 PasteAperture=-75 um PadAngle1=0 PadInModel1=100 PadAngle2=0 PadInModel2=100 ESR_Tolerance=1.0 
+MLIN2:TL31  N__83 N__85 Subst="MSub1" W=28.6659 mil notune{ 10 mil to 80 mil by 2 mil } opt{ 10 mil to 80 mil } L=38 mil notune{ 10 mil to 80 mil by 2 mil } noopt{ 10 mil to 80 mil } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+aele StabFact1=stab_fact(S);
+aele S_StabCircle1=s_stab_circle(S,51);
+aele L_StabCircle1=l_stab_circle(S,51);
+
+Optim:"Optim1" OptimType="hpVMO" ErrorForm="L2" SAProgressReport=0 MaxIters=1700 P=2 DesiredError=0.0 StatusLevel=4 FinalAnalysis="SP1" NormalizeGoals=yes SetBestValues=yes SaveSolns=yes SaveGoals=yes SaveOptimVars=yes UpdateDataset=yes SaveNominal=no SaveAllIterations=no UseAllOptVars=yes UseAllGoals=yes SaveCurrentEF=no InitialTempControlMode=0 SANumTrialsPerIter=10 NumShootsPerIter=20 SATempControlAlpha=0.8 EnableCockpit=yes NormalizeError=yes SaveAllTrials=no UseAdvTermCriteria=no CostRelativeTol=1.0e-8 LimitOfContSmallImprovement=5 
+
+OptimGoal:OptimGoal1 Expr="dB(S21)" SimInstanceName="SP1" Weight=1 \
+IndepVar[1]="freq" \
+SpecLimitLine[1]="OptimGoal1_limit1" SpecLimitLine[2]="OptimGoal1_limit2" 
+SpecLimitLine:"OptimGoal1_limit1" Type="GreaterThan" Min=12.6 Weight=1 \
+IndepVar[1]="freq" IndepMin[1]=1.7 GHz IndepMax[1]=2.1 GHz 
+SpecLimitLine:"OptimGoal1_limit2" Type="LessThan" Max=20 Weight=1 \
+IndepVar[1]="freq" IndepMin[1]=1.7 GHz IndepMax[1]=2.1 GHz 
+OptimGoal:OptimGoal2 Expr="dB(S11)" SimInstanceName="SP1" Weight=1 \
+IndepVar[1]="freq" \
+SpecLimitLine[1]="OptimGoal2_limit1" 
+SpecLimitLine:"OptimGoal2_limit1" Type="LessThan" Max=-12.5 Weight=1 \
+IndepVar[1]="freq" IndepMin[1]=1.7 GHz IndepMax[1]=2.1 GHz 
+OptimGoal:OptimGoal3 Expr="dB(S22)" SimInstanceName="SP1" Weight=1 \
+IndepVar[1]="freq" \
+SpecLimitLine[1]="OptimGoal3_limit1" 
+SpecLimitLine:"OptimGoal3_limit1" Type="LessThan" Max=-20 Weight=1 \
+IndepVar[1]="freq" IndepMin[1]=1.7 GHz IndepMax[1]=2.1 GHz 
+OptimGoal:OptimGoal4 Expr="nf(2)" SimInstanceName="SP1" Weight=1 \
+IndepVar[1]="freq" \
+SpecLimitLine[1]="OptimGoal4_limit1" 
+SpecLimitLine:"OptimGoal4_limit1" Type="LessThan" Max=1.95 Weight=1 \
+IndepVar[1]="freq" IndepMin[1]=1.7 GHz IndepMax[1]=2.1 GHz 
+OptimGoal:OptimGoal5 Expr="StabFact1" SimInstanceName="SP1" Weight=1 \
+IndepVar[1]="freq" \
+SpecLimitLine[1]="OptimGoal5_limit1" 
+SpecLimitLine:"OptimGoal5_limit1" Type="GreaterThan" Min=1 Weight=1 \
+IndepVar[1]="freq" IndepMin[1]=1e+07 IndepMax[1]=1e+10 
+#uselib "MDLXCLRAVX3" , "CAP_AVX_600S_001"
+"CAP_AVX_600S_001":AVX_600S_C7  N__52 N__74 C=2.31943 pF notune{ 1 pF to 100 pF by 0.01 pF } opt{ 0.1 pF to 100 pF } Subst="MSub1" Sim_mode=0 Pad_mode=0 Tolerance=1.0 FreqPt=100 MHz Temperature=18 Pad_Width=0.99 mm Pad_Length=0.622 mm Pad_Gap=0.6096 mm Orient=0 Body_Length=1.6 mm Body_Width=0.85 mm Body_Height=0.85 mm C_Discrete=-1 Solder_Mask=0 MaskAperture=75 um Solder_Paste=0 PasteAperture=-75 um PadAngle1=0 PadInModel1=100 PadAngle2=0 PadInModel2=100 ESR_Tolerance=1.0 
+#uselib "MDLXCLRAVX3" , "CAP_AVX_600S_001"
+"CAP_AVX_600S_001":AVX_600S_C2  N__0 N__23 C=47.9678 pF notune{ 1 pF to 100 pF by 0.01 pF } opt{ 0.1 pF to 100 pF } Subst="MSub1" Sim_mode=0 Pad_mode=0 Tolerance=1.0 FreqPt=100 MHz Temperature=18 Pad_Width=0.99 mm Pad_Length=0.622 mm Pad_Gap=0.6096 mm Orient=0 Body_Length=1.6 mm Body_Width=0.85 mm Body_Height=0.85 mm C_Discrete=-1 Solder_Mask=0 MaskAperture=75 um Solder_Paste=0 PasteAperture=-75 um PadAngle1=0 PadInModel1=100 PadAngle2=0 PadInModel2=100 ESR_Tolerance=1.0 
+#uselib "MDLXCLRAVX3" , "CAP_AVX_600S_001"
+"CAP_AVX_600S_001":AVX_600S_C4  N__6 N__5 C=56.2077 pF notune{ 1 pF to 100 pF by 0.01 pF } opt{ 0.1 pF to 100 pF } Subst="MSub1" Sim_mode=0 Pad_mode=0 Tolerance=1.0 FreqPt=100 MHz Temperature=18 Pad_Width=0.99 mm Pad_Length=0.622 mm Pad_Gap=0.6096 mm Orient=0 Body_Length=1.6 mm Body_Width=0.85 mm Body_Height=0.85 mm C_Discrete=-1 Solder_Mask=0 MaskAperture=75 um Solder_Paste=0 PasteAperture=-75 um PadAngle1=0 PadInModel1=100 PadAngle2=0 PadInModel2=100 ESR_Tolerance=1.0 
+MLIN2:TL2  N__24 N__25 Subst="MSub1" W=45.6563 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=149.856 mil notune{ 50 mil to 150 mil by 10 mil } opt{ 50 mil to 150 mil } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL1  N__65 N__10 Subst="MSub1" W=82.1287 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=1 cm notune{ 0.5 cm to 1.5 cm by 0.1 cm } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MTEE_ADS:Tee5  N__70 N__62 N__86 Subst="MSub1" W1=20.1159 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } W2=27.2852 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } W3=32.7176 mil notune{ 25 mil to 75 mil by 5 mil } noopt{ 25 mil to 75 mil } 
+MTEE_ADS:Tee4  N__94 N__55 N__29 Subst="MSub1" W1=21.9124 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } opt{ 12.5 mil to 37.5 mil } W2=27.7941 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } opt{ 12.5 mil to 37.5 mil } W3=25.8248 mil notune{ 25 mil to 75 mil by 5 mil } opt{ 25 mil to 75 mil } 
+MTEE_ADS:Tee3  N__35 N__83 N__87 Subst="MSub1" W1=48.2244 mil notune{ 12.5 mil to 60 mil by 2.5 mil } opt{ 12.5 mil to 60 mil } W2=48.2146 mil notune{ 12.5 mil to 60 mil by 2.5 mil } opt{ 12.5 mil to 60 mil } W3=48.1449 mil notune{ 25 mil to 75 mil by 5 mil } opt{ 25 mil to 75 mil } 
+MTEE_ADS:Tee2  N__59 N__89 N__44 Subst="MSub1" W1=13.9222 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } W2=23.6346 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } W3=72.0898 mil notune{ 25 mil to 75 mil by 5 mil } noopt{ 25 mil to 75 mil } 
+MTEE_ADS:Tee1  N__28 N__1 N__54 Subst="MSub1" W1=32.0674 mil notune{ 29 mil to 87 mil by 5.8 mil } noopt{ 29 mil to 87 mil } W2=29.9084 mil notune{ 29 mil to 87 mil by 5.8 mil } noopt{ 29 mil to 87 mil } W3=73.3409 mil notune{ 29 mil to 87 mil by 5.8 mil } noopt{ 29 mil to 87 mil } 
+MCROSO:Cros1  N__25 N__61 N__19 N__8 Subst="MSub1" W1=14.5426 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } opt{ 12.5 mil to 80 mil } W2=55.9055 mil notune{ 25 mil to 75 mil by 5 mil } opt{ 25 mil to 75 mil } W3=16.0798 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } opt{ 12.5 mil to 37.5 mil } W4=48.2106 mil notune{ 25 mil to 75 mil by 5 mil } opt{ 25 mil to 75 mil } 
+MCORN:Corn1  N__68 N__69 Subst="MSub1" W=30.8309 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } 
+MSTEP:Step21  N__57 N__56 Subst="MSub1" W1=64 mil W2=25 mil 
+MSTEP:Step18  N__12 N__11 Subst="MSub1" W1=65 mil W2=25 mil 
+MSTEP:Step8  N__26 N__20 Subst="MSub1" W1=28.59 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } W2=71.6496 mil notune{ 25 mil to 75 mil by 5 mil } noopt{ 25 mil to 75 mil } 
+MSTEP:Step1  N__10 N__6 Subst="MSub1" W1=82.7756 mil notune{ 29 mil to 87 mil by 5.8 mil } noopt{ 29 mil to 87 mil } W2=0.99 mm 
+MSTEP:Step2  N__5 N__49 Subst="MSub1" W1=0.99 mm W2=55.4157 mil notune{ 29 mil to 87 mil by 5.8 mil } noopt{ 29 mil to 87 mil } 
+MSTEP:Step3  N__3 N__2 Subst="MSub1" W1=84.0165 mil notune{ 29 mil to 87 mil by 5.8 mil } noopt{ 29 mil to 87 mil } W2=0.5 mm 
+MSTEP:Step4  N__1 N__0 Subst="MSub1" W1=39.2212 mm notune{ 29 mm to 87 mm by 5.8 mm } noopt{ 29 mm to 87 mm } W2=0.99 mm 
+MSTEP:Step5  N__23 N__24 Subst="MSub1" W1=0.99 mm W2=62.3094 mil notune{ 29 mil to 87 mil by 5.8 mil } noopt{ 29 mil to 87 mil } 
+MLIN2:TL35  N__17 N__21 Subst="MSub1" W=30 mil notune{ 25 mil to 87 mil by 5.8 mil } noopt{ 29 mil to 87 mil } L=12 mil notune{ 50 mil to 150 mil by 10 mil } opt{ 12 mil to 150 mil } Wall1=1.0E+30 mil notune{ 5e+29 mil to 1.5e+30 mil by 1e+29 mil } Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL34  N__46 N__18 Subst="MSub1" W=30 mil notune{ 25 mil to 87 mil by 5.8 mil } noopt{ 29 mil to 87 mil } L=12 mil notune{ 50 mil to 150 mil by 10 mil } opt{ 12 mil to 150 mil } Wall1=1.0E+30 mil notune{ 5e+29 mil to 1.5e+30 mil by 1e+29 mil } Wall2=1.0E+30 mil Mod=1 
+MSTEP:Step11  N__16 N__15 Subst="MSub1" W1=14.2393 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } W2=61.0984 mil notune{ 25 mil to 75 mil by 5 mil } noopt{ 25 mil to 75 mil } 
+MSTEP:Step12  N__13 N__14 Subst="MSub1" W1=34.5108 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } W2=25 mil notune{ 25 mil to 75 mil by 5 mil } noopt{ 25 mil to 75 mil } 
+MSTEP:Step20  N__76 N__58 Subst="MSub1" W1=36.0711 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } W2=0.5 mm 
+MLIN2:TL23  N__59 N__40 Subst="MSub1" W=41.7197 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=1 cm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MSTEP:Step28  N__72 N__48 Subst="MSub1" W1=33 mil notune{ 5 mil to 80 mil by 0.05 mil } noopt{ 0.25 mil to 0.75 mil } W2=25 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } 
+MSTEP:Step13  N__41 N__77 Subst="MSub1" W1=1.27 mm W2=39.5413 mil notune{ 25 mil to 75 mil by 5 mil } noopt{ 25 mil to 75 mil } 
+MSTEP:Step15  N__39 N__45 Subst="MSub1" W1=1.27 mm W2=51.8724 mil notune{ 25 mil to 75 mil by 5 mil } noopt{ 25 mil to 75 mil } 
+MSTEP:Step6  N__32 N__4 Subst="MSub1" W1=1.016 mm W2=66.2571 mil notune{ 25 mil to 75 mil by 5 mil } noopt{ 25 mil to 75 mil } 
+MSTEP:Step7  N__31 N__30 Subst="MSub1" W1=25 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } W2=25 mil notune{ 25 mil to 75 mil by 5 mil } noopt{ 25 mil to 75 mil } 
+MSTEP:Step14  N__42 N__38 Subst="MSub1" W1=28.3805 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } W2=1.27 mm 
+MSTEP:Step27  N__37 N__36 Subst="MSub1" W1=43 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } W2=1.27 mm 
+VIAGND:V1  N__14 Subst="MSub1" D=10 mil T=0.15 mil Rho=1.0 W=35 mil 
+VIAGND:V5  N__11 Subst="MSub1" D=10 mil T=0.15 mil Rho=1.0 W=25.0 mil 
+VIAGND:V6  N__56 Subst="MSub1" D=10 mil T=0.15 mil Rho=1.0 W=25.0 mil 
+VIAGND:V3  N__18 Subst="MSub1" D=10 mil T=0.15 mil Rho=1.0 W=35 mil 
+VIAGND:V2  N__48 Subst="MSub1" D=10 mil T=0.15 mil Rho=1.0 W=35 mil 
+VIAGND:V4  N__21 Subst="MSub1" D=10 mil T=0.15 mil Rho=1.0 W=30 mil 
+Port:Term1  N__65 0 Num=1 Z=50 
+Port:Term2  N__53 0 Num=2 Z=50 
+MLIN2:TL3  N__62 N__53 Subst="MSub1" W=43.276 mil notune{ 15 mil to 45 mil by 3 mil } noopt{ 15 mil to 45 mil } L=1 cm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL10  N__55 N__34 Subst="MSub1" W=45.1972 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=37.6168 mil notune{ 25 mil to 75 mil by 5 mil } opt{ 25 mil to 75 mil } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL5  N__29 N__37 Subst="MSub1" W=42.7346 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=38.5355 mil notune{ 25 mil to 75 mil by 5 mil } opt{ 25 mil to 75 mil } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL6  N__49 N__28 Subst="MSub1" W=53.3409 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=51.6752 mil notune{ 20 mil to 60 mil by 4 mil } opt{ 20 mil to 60 mil } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL7  N__54 N__3 Subst="MSub1" W=47.8835 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=24.7388 mil notune{ 20 mil to 60 mil by 4 mil } opt{ 20 mil to 60 mil } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MSTEP:Step23  N__50 N__27 Subst="MSub1" W1=0.5 mm notune{ 0.25 mm to 0.75 mm by 0.05 mm } noopt{ 0.25 mm to 0.75 mm } W2=20.1793 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } 
+MLIN2:TL8  N__8 N__26 Subst="MSub1" W=31.7306 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=101.511 mil notune{ 50 mil to 150 mil by 10 mil } opt{ 50 mil to 150 mil } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL9  N__4 N__61 Subst="MSub1" W=80.9173 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=118.967 mil notune{ 50 mil to 150 mil by 10 mil } opt{ 50 mil to 150 mil } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MSTEP:Step29  N__89 N__47 Subst="MSub1" W1=28.3805 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } W2=1.27 mm 
+MLIN2:TL17  N__87 N__78 Subst="MSub1" W=44.2689 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=25 mil notune{ 50 mil to 150 mil by 10 mil } opt{ 50 mil to 150 mil } Wall1=1.0E+30 mil notune{ 5e+29 mil to 1.5e+30 mil by 1e+29 mil } Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL13  N__44 N__68 Subst="MSub1" W=49.2075 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=122.062 mil notune{ 90 mil to 270 mil by 18 mil } opt{ 90 mil to 270 mil } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL14  N__42 N__69 Subst="MSub1" W=33.947 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=180.264 mil notune{ 120 mil to 360 mil by 24 mil } opt{ 120 mil to 360 mil } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MSTEP:Step31  N__67 N__51 Subst="MSub1" W1=25 mil notune{ 29 mil to 87 mil by 5.8 mil } noopt{ 29 mil to 87 mil } W2=25 mil 
+MLIN2:TL16  N__19 N__22 Subst="MSub1" W=29.2846 mil notune{ 10 mil to 30 mil by 2 mil } opt{ 10 mil to 30 mil } L=58.8768 mil notune{ 50 mil to 150 mil by 10 mil } opt{ 50 mil to 150 mil } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MSTEP:Step36  N__90 N__85 Subst="MSub1" W1=1.016 mm W2=30 mil 
+MLIN2:TL32  N__86 N__76 Subst="MSub1" W=33.6598 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=26.318 mil notune{ 25 mil to 75 mil by 5 mil } opt{ 25 mil to 75 mil } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL20  N__35 N__31 Subst="MSub1" W=44 mil notune{ 29 mil to 87 mil by 5.8 mil } noopt{ 29 mil to 87 mil } L=31.2219 mil notune{ 25 mil to 75 mil by 5 mil } opt{ 25 mil to 75 mil } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MSTEP:Step24  N__74 N__75 Subst="MSub1" W1=0.99 mm W2=69.0776 mil notune{ 25 mil to 75 mil by 5 mil } noopt{ 25 mil to 75 mil } 
+MLIN2:TL21  N__70 N__75 Subst="MSub1" W=34.1635 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=26.3447 mil notune{ 25 mil to 75 mil by 5 mil } opt{ 25 mil to 75 mil } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL33  N__64 N__13 Subst="MSub1" W=62.4508 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=125.034 mil notune{ 50 mil to 150 mil by 10 mil } opt{ 20 mil to 200 mil } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL24  N__27 N__72 Subst="MSub1" W=33.1011 mil notune{ 29 mil to 87 mil by 5.8 mil } noopt{ 29 mil to 87 mil } L=1 cm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL25  N__80 N__77 Subst="MSub1" W=29.7578 mil notune{ 10 mil to 80 mil by 2 mil } opt{ 10 mil to 80 mil } L=34.9 mil notune{ 10 mil to 80 mil by 2 mil } noopt{ 10 mil to 80 mil } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MCORN:Corn3  N__22 N__43 Subst="MSub1" W=18.0861 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } 
+MSTEP:Step25  N__80 N__79 Subst="MSub1" W1=24.7229 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } W2=1.016 mm notune{ 0.00 mm to 75 mm by 5 mm } noopt{ 25 mm to 75 mm } 
+MSTEP:Step26  N__60 N__66 Subst="MSub1" W1=19.2411 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } W2=65.0673 mil notune{ 25 mil to 75 mil by 5 mil } noopt{ 25 mil to 75 mil } 
+MLIN2:TL26  N__15 N__60 Subst="MSub1" W=62.8772 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=133.05 mil notune{ 20 mil to 150 mil by 1 mil } opt{ 50 mil to 150 mil } Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL27  N__43 N__67 Subst="MSub1" W=22 mil notune{ 25 mil to 87 mil by 5.8 mil } noopt{ 29 mil to 87 mil } L=61.9949 mil notune{ 50 mil to 150 mil by 10 mil } opt{ 50 mil to 150 mil } Wall1=1.0E+30 mil notune{ 5e+29 mil to 1.5e+30 mil by 1e+29 mil } Wall2=1.0E+30 mil Mod=1 
+MSTEP:Step32  N__84 N__82 Subst="MSub1" W1=24.7229 mil notune{ 12.5 mil to 37.5 mil by 2.5 mil } noopt{ 12.5 mil to 37.5 mil } W2=1.016 mm 
+#uselib "MDLXCLRCLC3" , "IND_CLC_0603_005"
+"IND_CLC_0603_005":CLC_0603HL_L5  N__82 N__90 L=3000 nH Subst="MSub1" Sim_mode=0 Pad_mode=0 Tolerance=1.0 FreqPt=100 MHz Temperature=25 Pad_Width=1.016 mm Pad_Length=0.635 mm Pad_Gap=0.635 mm Orient=0 Body_Length=1.8 mm Body_Width=1.19 mm Body_Height=0.94 mm L_Discrete=-1 Solder_Mask=0 MaskAperture=75 um Solder_Paste=0 PasteAperture=-75 um PadAngle1=0 PadInModel1=100 PadAngle2=0 PadInModel2=100 ESR_Tolerance=1.0 
+MSTEP:Step34  N__33 N__71 Subst="MSub1" W1=0.5 mm W2=25 mil 
+MLIN2:TL28  N__57 N__71 Subst="MSub1" W=72.6591 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=1 cm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MSTEP:Step35  N__88 N__73 Subst="MSub1" W1=1.27 mm W2=65 mil 
+MLIN2:TL29  N__12 N__73 Subst="MSub1" W=60.2488 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=1 cm Wall1=1.0E+30 mil Wall2=1.0E+30 mil Mod=1 
+MLIN2:TL30  N__84 N__45 Subst="MSub1" W=61.2075 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=39.9862 mil notune{ 20 mil to 60 mil by 4 mil } opt{ 20 mil to 60 mil } Wall1=1.0E+30 mil noopt{ 5e+29 mil to 1.5e+30 mil } Wall2=1.0E+30 mil Mod=1 
+DC:DC1 StatusLevel=2 DevOpPtLevel=0 UseFiniteDiff=no PrintOpPoint=no Restart=1 \
+OutputPlan="DC1_Output" 
+
+OutputPlan:DC1_Output \
+      Type="Output" \
+      UseNodeNestLevel=yes \
+      NodeNestLevel=2 \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2 \
+      UseDeviceCurrentNestLevel=no \
+      DeviceCurrentNestLevel=0 \
+      DeviceCurrentDeviceType="All" \
+      DeviceCurrentSymSyntax=yes \
+      UseCurrentNestLevel=yes \
+      CurrentNestLevel=999 \
+      UseDeviceVoltageNestLevel=no \
+      DeviceVoltageNestLevel=0 \
+      DeviceVoltageDeviceType="All"
+
+#uselib "ckt" , "S2P"
+S2P:SNP1  N__91 N__92 0 File="C:\Users\luke_mccubbin1\Box\CurrentClasses\Spring25\RF2\00101553120084.S2P" Type="touchstone" InterpMode="linear" InterpDom="" ExtrapMode="constant" Temp=27.0 CheckPassivity=0 
+Port:Term4  N__92 0 Num=4 Z=50 Ohm Noise=yes 
+Port:Term3  N__91 0 Num=3 Z=50 Ohm Noise=yes 
+#uselib "MDLXCLRAVX3" , "CAP_AVX_600S_001"
+"CAP_AVX_600S_001":AVX_600S_C8  N__78 N__9 C=120 pF notune{ 1 pF to 100 pF by 0.01 pF } opt{ 0.1 pF to 100 pF } Subst="MSub1" Sim_mode=0 Pad_mode=0 Tolerance=1.0 FreqPt=100 MHz Temperature=18 Pad_Width=0.99 mm Pad_Length=0.622 mm Pad_Gap=0.6096 mm Orient=0 Body_Length=1.6 mm Body_Width=0.85 mm Body_Height=0.85 mm C_Discrete=-1 Solder_Mask=0 MaskAperture=75 um Solder_Paste=0 PasteAperture=-75 um PadAngle1=0 PadInModel1=100 PadAngle2=0 PadInModel2=100 ESR_Tolerance=1.0 
+MLIN2:TL36  N__9 N__94 Subst="MSub1" W=44.2689 mil notune{ 29 mil to 87 mil by 5.8 mil } opt{ 29 mil to 87 mil } L=25 mil notune{ 50 mil to 150 mil by 10 mil } opt{ 50 mil to 150 mil } Wall1=1.0E+30 mil notune{ 5e+29 mil to 1.5e+30 mil by 1e+29 mil } Wall2=1.0E+30 mil Mod=1 
