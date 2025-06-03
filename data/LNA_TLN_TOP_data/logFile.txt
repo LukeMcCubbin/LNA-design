@@ -1,0 +1,27 @@
+
+hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
+    (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
+
+
+***** Simulation started at Tue Apr 15 02:13:10 2025
+      Running on host: "ROG-314-02"
+      In Directory: "C:\Users\luke_mccubbin1\Box\CurrentClasses\Spring25\RF2\FinalProject\ADSprojFinal\Workspace2_wrk\data"
+      Process ID: 9628
+
+Pt DC convergence is used.
+
+SP SP1[1] <Workspace2_lib:LNA_TLN_TOP:schematic>   freq=(10 MHz->10 GHz)
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    The global circuit temperature (25 C or 298.15 K) does not equal the
+    IEEE standard noise temperature (16.85 C or 290 K) in the noise
+    analysis `SP1'. As a result, the signal-to-noise ratio loss at the
+    the circuit temperature and the noise figure, defined and calculated
+    at the standard noise temperature, might not agree for a passive
+    circuit. To eliminate this possible discrepancy, set the Temp parameter
+    on the Options item to 16.85 C.
+
+
+
+Resource usage:
+  Total stopwatch time     =    19.47 seconds.
+

@@ -1,0 +1,44 @@
+
+hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
+    (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
+
+
+***** Simulation started at Thu Apr  3 10:28:31 2025
+      Running on host: "ROG-314-02"
+      In Directory: "C:\Users\luke_mccubbin1\Box\CurrentClasses\Spring25\RF2\FinalProject\ADSprojFinal\Workspace2_wrk\data"
+      Process ID: 16484
+
+
+CT Sweep1[1] <Workspace2_lib:BJT_Stab_vs_bias:schematic>   IBB=(20e-06->100e-06)
+Pt DC convergence is used.
+
+SP Sweep1[1].SP1[1/9] <Workspace2_lib:BJT_Stab_vs_bias:schematic>  IBB=20e-06  freq=(100 MHz->5 GHz)
+
+
+SP Sweep1[1].SP1[2/9] <Workspace2_lib:BJT_Stab_vs_bias:schematic>  IBB=30e-06  freq=(100 MHz->5 GHz)
+
+
+SP Sweep1[1].SP1[3/9] <Workspace2_lib:BJT_Stab_vs_bias:schematic>  IBB=40e-06  freq=(100 MHz->5 GHz)
+
+
+SP Sweep1[1].SP1[4/9] <Workspace2_lib:BJT_Stab_vs_bias:schematic>  IBB=50e-06  freq=(100 MHz->5 GHz)
+
+
+SP Sweep1[1].SP1[5/9] <Workspace2_lib:BJT_Stab_vs_bias:schematic>  IBB=60e-06  freq=(100 MHz->5 GHz)
+
+
+SP Sweep1[1].SP1[6/9] <Workspace2_lib:BJT_Stab_vs_bias:schematic>  IBB=70e-06  freq=(100 MHz->5 GHz)
+
+
+SP Sweep1[1].SP1[7/9] <Workspace2_lib:BJT_Stab_vs_bias:schematic>  IBB=80e-06  freq=(100 MHz->5 GHz)
+
+
+SP Sweep1[1].SP1[8/9] <Workspace2_lib:BJT_Stab_vs_bias:schematic>  IBB=90e-06  freq=(100 MHz->5 GHz)
+
+
+SP Sweep1[1].SP1[9/9] <Workspace2_lib:BJT_Stab_vs_bias:schematic>  IBB=100e-06  freq=(100 MHz->5 GHz)
+
+
+Resource usage:
+  Total stopwatch time     =     4.96 seconds.
+

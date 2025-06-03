@@ -1,0 +1,490 @@
+
+hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
+    (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
+
+
+***** Simulation started at Thu May  8 10:59:11 2025
+      Running on host: "ROG-314-02"
+      In Directory: "C:\Users\luke_mccubbin1\Box\CurrentClasses\Spring25\RF2\FinalProject\ADSprojFinal\Workspace2_wrk\data"
+      Process ID: 23640
+
+Warning detected by hpeesofsim in LinearCollapse '_2_' during analysis.
+    LinearCollapse is disabled because there is 'DC' analysis present.
+
+
+CT Sweep1[1] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>   IBB=(20e-06->100e-06)
+
+CT Sweep1[1].Sweep2[1/5] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06  VCE=(250e-03->3)
+Pt DC convergence is used.
+
+SP Sweep1[1].Sweep2[1/5].SP1[1/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=250e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[2/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=350e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[3/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=450e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[4/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=550e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[5/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=650e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[6/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=750e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[7/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=850e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[8/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=950e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[9/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=1.05  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[10/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=1.15  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[11/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=1.25  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[12/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=1.35  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[13/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=1.45  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[14/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=1.55  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[15/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=1.65  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[16/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=1.75  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[17/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=1.85  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[18/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=1.95  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[19/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=2.05  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[20/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=2.15  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[21/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=2.25  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[22/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=2.35  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[23/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=2.45  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[24/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=2.55  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[25/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=2.65  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[26/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=2.75  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[27/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=2.85  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[28/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=2.95  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[1/5].SP1[29/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06 VCE=3  freq=1.9 GHz
+
+
+DC Sweep1[1].DC1[1/5] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=20e-06  VCE=(250e-03->3)
+.
+.
+............................
+
+CT Sweep1[1].Sweep2[2/5] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06  VCE=(250e-03->3)
+
+SP Sweep1[1].Sweep2[2/5].SP1[1/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=250e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[2/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=350e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[3/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=450e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[4/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=550e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[5/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=650e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[6/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=750e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[7/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=850e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[8/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=950e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[9/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=1.05  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[10/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=1.15  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[11/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=1.25  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[12/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=1.35  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[13/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=1.45  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[14/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=1.55  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[15/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=1.65  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[16/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=1.75  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[17/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=1.85  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[18/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=1.95  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[19/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=2.05  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[20/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=2.15  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[21/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=2.25  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[22/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=2.35  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[23/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=2.45  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[24/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=2.55  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[25/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=2.65  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[26/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=2.75  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[27/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=2.85  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[28/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=2.95  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[2/5].SP1[29/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06 VCE=3  freq=1.9 GHz
+
+
+DC Sweep1[1].DC1[2/5] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=40e-06  VCE=(250e-03->3)
+.
+.
+............................
+
+CT Sweep1[1].Sweep2[3/5] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06  VCE=(250e-03->3)
+
+SP Sweep1[1].Sweep2[3/5].SP1[1/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=250e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[2/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=350e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[3/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=450e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[4/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=550e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[5/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=650e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[6/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=750e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[7/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=850e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[8/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=950e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[9/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=1.05  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[10/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=1.15  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[11/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=1.25  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[12/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=1.35  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[13/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=1.45  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[14/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=1.55  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[15/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=1.65  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[16/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=1.75  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[17/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=1.85  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[18/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=1.95  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[19/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=2.05  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[20/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=2.15  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[21/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=2.25  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[22/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=2.35  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[23/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=2.45  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[24/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=2.55  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[25/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=2.65  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[26/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=2.75  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[27/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=2.85  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[28/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=2.95  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[3/5].SP1[29/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06 VCE=3  freq=1.9 GHz
+
+
+DC Sweep1[1].DC1[3/5] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=60e-06  VCE=(250e-03->3)
+.
+.
+............................
+
+CT Sweep1[1].Sweep2[4/5] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06  VCE=(250e-03->3)
+
+SP Sweep1[1].Sweep2[4/5].SP1[1/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=250e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[2/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=350e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[3/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=450e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[4/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=550e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[5/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=650e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[6/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=750e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[7/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=850e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[8/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=950e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[9/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=1.05  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[10/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=1.15  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[11/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=1.25  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[12/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=1.35  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[13/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=1.45  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[14/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=1.55  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[15/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=1.65  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[16/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=1.75  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[17/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=1.85  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[18/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=1.95  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[19/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=2.05  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[20/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=2.15  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[21/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=2.25  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[22/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=2.35  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[23/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=2.45  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[24/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=2.55  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[25/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=2.65  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[26/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=2.75  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[27/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=2.85  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[28/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=2.95  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[4/5].SP1[29/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06 VCE=3  freq=1.9 GHz
+
+
+DC Sweep1[1].DC1[4/5] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=80e-06  VCE=(250e-03->3)
+.
+.
+............................
+
+CT Sweep1[1].Sweep2[5/5] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06  VCE=(250e-03->3)
+
+SP Sweep1[1].Sweep2[5/5].SP1[1/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=250e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[2/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=350e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[3/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=450e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[4/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=550e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[5/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=650e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[6/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=750e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[7/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=850e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[8/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=950e-03  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[9/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=1.05  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[10/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=1.15  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[11/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=1.25  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[12/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=1.35  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[13/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=1.45  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[14/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=1.55  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[15/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=1.65  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[16/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=1.75  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[17/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=1.85  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[18/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=1.95  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[19/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=2.05  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[20/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=2.15  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[21/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=2.25  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[22/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=2.35  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[23/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=2.45  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[24/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=2.55  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[25/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=2.65  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[26/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=2.75  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[27/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=2.85  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[28/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=2.95  freq=1.9 GHz
+
+
+SP Sweep1[1].Sweep2[5/5].SP1[29/29] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06 VCE=3  freq=1.9 GHz
+
+
+DC Sweep1[1].DC1[5/5] <Workspace2_lib:BJT_SP_NF_Match_Circ:schematic>  IBB=100e-06  VCE=(250e-03->3)
+.
+.
+............................
+
+Resource usage:
+  Total stopwatch time     =    22.69 seconds.
+

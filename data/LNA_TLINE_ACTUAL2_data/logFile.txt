@@ -1,0 +1,65 @@
+
+hpeesofsim (*) 600.shp Apr  3 2024, MINT version 5
+    (64-bit windows built: Wed Apr 03, 2024 19:25:42 +0000)
+
+
+***** Simulation started at Thu May  8 12:59:06 2025
+      Running on host: "ROG-314-02"
+      In Directory: "C:\Users\luke_mccubbin1\Box\CurrentClasses\Spring25\RF2\FinalProject\ADSprojFinal\Workspace2_wrk\data"
+      Process ID: 19844
+
+Warning detected by hpeesofsim in LinearCollapse '_2_' during analysis.
+    LinearCollapse is disabled because there is 'DC' analysis present.
+
+Pt DC convergence is used.
+
+SP SP1[1] <Workspace2_lib:LNA_TLINE_ACTUAL2:schematic>   freq=(10 MHz->10 GHz)
+Warning detected by hpeesofsim during SP analysis 'SP1'.
+    UserValue(5.178047) > MaxRecommendValue(5.000000) for 'Wlargest/Wsmallest' in `Tee2'
+
+
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    The global circuit temperature (25 C or 298.15 K) does not equal the
+    IEEE standard noise temperature (16.85 C or 290 K) in the noise
+    analysis `SP1'. As a result, the signal-to-noise ratio loss at the
+    the circuit temperature and the noise figure, defined and calculated
+    at the standard noise temperature, might not agree for a passive
+    circuit. To eliminate this possible discrepancy, set the Temp parameter
+    on the Options item to 16.85 C.
+
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    The DC (0 Hz) value has not been specified in the Touchstone file
+    'C:/Users/luke_mccubbin1/Box/CurrentClasses/Spring25/RF2/00101553120084.S2P'.
+
+Warning detected by hpeesofsim during SP analysis `SP1'.
+    Data in the Touchstone file `C:/Users/luke_mccubbin1/Box/CurrentClasses/Spring25/RF2/00101553120084.S2P'
+    does not cover the requested value of `freq'.
+    Therefore, the required data was obtained by extrapolation.
+
+
+
+DC DC1[1] <Workspace2_lib:LNA_TLINE_ACTUAL2:schematic>  
+.
+.
+
+DC convergence achieved in 75 iterations.
+Warning detected by hpeesofsim during circuit set up.
+    Evaluation failed for ` Mu1=mu(S)':  "Mu1":
+      Function "mu" : Geometrically derived stability factor (load) is only available for 2-port networks
+
+Warning detected by hpeesofsim during circuit set up.
+    Evaluation failed for ` StabFact1=stab_fact(S)':  "StabFact1":
+      Function "stab_fact" : This function only accepts a 2x2 (sub)matrix
+
+Warning detected by hpeesofsim during circuit set up.
+    Evaluation failed for ` S_StabCircle1=s_stab_circle(S,51)':  "S_StabCircle1":
+      Function "s_stab_circle" : Source stability gain circle is only available for 2-port scattering parameters
+
+Warning detected by hpeesofsim during circuit set up.
+    Evaluation failed for ` L_StabCircle1=l_stab_circle(S,51)':  "L_StabCircle1":
+      Function "l_stab_circle" : Load stability gain circle is only available for 2-port scattering parameters
+
+
+Resource usage:
+  Total stopwatch time     =    22.55 seconds.
+

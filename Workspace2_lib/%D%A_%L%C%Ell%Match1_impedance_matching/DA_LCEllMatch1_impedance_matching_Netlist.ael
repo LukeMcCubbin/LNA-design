@@ -1,0 +1,7 @@
+AJ_FilterMatch_Netlist = list(list(list(2, 0.000000e+00, 1.869171e-13), list(0, 2.924792e-09, 0.000000e+00)), 
+list(list(2, 1.922257e-09, 0.000000e+00), list(0, 0.000000e+00, 9.112581e-12)), 
+list(list(0, 2.788146e-09, 0.000000e+00), list(2, 2.068843e-08, 0.000000e+00)), 
+list(list(0, 8.911809e-10, 0.000000e+00), list(2, 2.325303e-09, 0.000000e+00)));
+AJ_FilterMatch_MRD = list(0.000000, 0.000000, 0.000000, 0.000000);
+AJ_FilterMatch_SelectedNetworkIndex = 2;
+
